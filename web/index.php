@@ -1,3 +1,10 @@
 <?php
-define('APP_PATH', __DIR__.'/../app/');  //define App constant
-require __DIR__ . '/../zero/start.php';
+namespace zero;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+new \Nezimi\Error();
+
+Container::get('application')->run()->send();
+
+

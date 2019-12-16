@@ -5,7 +5,7 @@ class Index
 {
 	public function index()
 	{
-		echo 'Hello World!';	
+		return 'Hello World!';	
 	}
 
 }

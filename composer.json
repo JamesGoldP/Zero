@@ -8,11 +8,14 @@
 		"PHP Framework"	
 	],
 	"require":{
-		"php": ">=5.4"
+		"php": ">=5.4",
+		"nezimi/framework": "dev-master",
+		"nezimi/my-error": "dev-master",
+		"nezimi/my-orm": "dev-master"
 	},
 	"require-dev":{
 		"php": ">=5.4",
-		"nezimi/framework": "dev-master"
+		"nezimi/my-functions": "dev-master"
 	},
 	"autoload": {
         "psr-4": {
