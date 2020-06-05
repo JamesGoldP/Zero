@@ -4,33 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc3e82ffa714490769dbdc83a8b8de1f",
+    "content-hash": "4b66950b89673b2c00934635e198156c",
     "packages": [
         {
-            "name": "nezimi/framework",
+            "name": "zero-systems/framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PengYilong/framework.git",
-                "reference": "aa9172b6895454cc5db2940472230c9cdba5077d"
+                "reference": "b22c41f40ad4da1d93f2515c53ba4d3e22d0203d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PengYilong/framework/zipball/aa9172b6895454cc5db2940472230c9cdba5077d",
-                "reference": "aa9172b6895454cc5db2940472230c9cdba5077d",
+                "url": "https://api.github.com/repos/PengYilong/framework/zipball/b22c41f40ad4da1d93f2515c53ba4d3e22d0203d",
+                "reference": "b22c41f40ad4da1d93f2515c53ba4d3e22d0203d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4"
             },
             "require-dev": {
-                "nezimi/my-error": "dev-master",
-                "nezimi/my-functions": "dev-master",
-                "php": ">=5.4"
+                "php": ">=5.4",
+                "zero-systems/zero-error": "dev-master",
+                "zero-systems/zero-helper": "dev-master"
             },
             "type": "library",
             "autoload": {
-                "files": [],
                 "psr-4": {
                     "zero\\": "src/zero/"
                 }
@@ -41,131 +40,22 @@
                 "php",
                 "php framework"
             ],
-            "time": "2019-12-14T13:48:30+00:00"
-        },
-        {
-            "name": "nezimi/my-error",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PengYilong/my-error.git",
-                "reference": "b041f7b5d0035f53df180e1cbf5b7b4c90170619"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PengYilong/my-error/zipball/b041f7b5d0035f53df180e1cbf5b7b4c90170619",
-                "reference": "b041f7b5d0035f53df180e1cbf5b7b4c90170619",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Nezimi\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Yilong Peng",
-                    "email": "948800401@qq.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "php error and exception",
-            "time": "2019-12-04T08:00:13+00:00"
-        },
-        {
-            "name": "nezimi/my-orm",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PengYilong/my-orm.git",
-                "reference": "0b3607ffe7ad6ce1007f2e67df68fd7be4bf8397"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PengYilong/my-orm/zipball/0b3607ffe7ad6ce1007f2e67df68fd7be4bf8397",
-                "reference": "0b3607ffe7ad6ce1007f2e67df68fd7be4bf8397",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "nezimi/my-functions": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Nezimi\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Yilong Peng",
-                    "email": "948800401@qq.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "ORM FRAMEWORK",
-            "time": "2019-12-14T05:31:18+00:00"
+            "time": "2020-06-05T05:29:08+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "nezimi/my-functions",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PengYilong/my-functions.git",
-                "reference": "d23eaece5cfc5561b28ae205a5eb7eb1db8183fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PengYilong/my-functions/zipball/d23eaece5cfc5561b28ae205a5eb7eb1db8183fc",
-                "reference": "d23eaece5cfc5561b28ae205a5eb7eb1db8183fc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": [],
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Yilong Peng",
-                    "email": "948800401@qq.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "library",
-            "time": "2019-12-09T11:22:23+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nezimi/framework": 20,
-        "nezimi/my-error": 20,
-        "nezimi/my-orm": 20,
-        "nezimi/my-functions": 20
+        "zero-systems/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=7.1.0"
     },
     "platform-dev": {
         "php": ">=5.4"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }

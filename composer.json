@@ -1,21 +1,18 @@
 {
-	"name": "nezimi/zero",
+	"name": "zero-systems/zero",
 	"description": "A PHP framework",
 	"minimum-stability": "dev",
-	"type": "Framework",
+	"type": "framework",
 	"keywords":[
 		"PHP",
 		"PHP Framework"	
 	],
 	"require":{
-		"php": ">=5.4",
-		"nezimi/framework": "dev-master",
-		"nezimi/my-error": "dev-master",
-		"nezimi/my-orm": "dev-master"
+		"php": ">=7.1.0",
+		"zero-systems/framework": "dev-master"
 	},
 	"require-dev":{
-		"php": ">=5.4",
-		"nezimi/my-functions": "dev-master"
+		"php": ">=5.4"
 	},
 	"autoload": {
         "psr-4": {

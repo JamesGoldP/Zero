@@ -1,10 +1,8 @@
 <?php
-namespace App\Common\Model;
+namespace app\common\model;
 
 use Nezumi\Paging;
 use zero\Model;
-use zero\Factory;
-use app\common\model\Factory as IFactory;
 use zero\Register;
 use zero\Config;
 
@@ -19,7 +17,7 @@ class Base extends Model
 	/**
 	 * @var string name of table
 	 */
-	protected $table = NULL;
+	protected $table = null;
 
 
 	/**
