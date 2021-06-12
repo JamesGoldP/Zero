@@ -1,6 +1,6 @@
 # composer
 composer.phar
-/vendor/
+/vendor
 
 # windows
 Thumbs.db
@@ -11,9 +11,6 @@ Thumbs.db
 # php-cs-fixer
 .php_cs.cache
 
-
-temp.md
-config/database.php
-issue.md
-/web/
-/zero/
+database.php
+    
+web/data/

@@ -8,11 +8,19 @@
 		"PHP Framework"	
 	],
 	"require":{
-		"php": ">=7.1.0",
+		"php": ">=7.0.0",
 		"zero-systems/framework": "dev-master"
 	},
 	"require-dev":{
-		"php": ">=5.4"
+		"php": ">=7.0.0",
+		"zero-systems/framework": "dev-master",
+		"zero-systems/zero-helper": "dev-master",
+		"zero-systems/zero-orm": "dev-master",
+		"zero-systems/zero-container": "dev-main",
+		"zero-systems/zero-validate": "dev-main",
+		"zero-systems/zero-error": "dev-master",
+		"firebase/php-jwt": "dev-master",
+		"zero-systems/zero-log": "dev-master"
 	},
 	"autoload": {
         "psr-4": {

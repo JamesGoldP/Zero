@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b66950b89673b2c00934635e198156c",
+    "content-hash": "ed9b537e4de0adbc7fe1021c91bc5aaf",
     "packages": [
         {
             "name": "zero-systems/framework",
@@ -12,22 +12,29 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PengYilong/framework.git",
-                "reference": "b22c41f40ad4da1d93f2515c53ba4d3e22d0203d"
+                "reference": "36c5476d41846eb5a45348a816defa1206d847c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PengYilong/framework/zipball/b22c41f40ad4da1d93f2515c53ba4d3e22d0203d",
-                "reference": "b22c41f40ad4da1d93f2515c53ba4d3e22d0203d",
-                "shasum": ""
+                "url": "https://api.github.com/repos/PengYilong/framework/zipball/36c5476d41846eb5a45348a816defa1206d847c7",
+                "reference": "36c5476d41846eb5a45348a816defa1206d847c7",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "php": ">=5.4"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "php": ">=5.4",
+                "php": ">=7.0",
                 "zero-systems/zero-error": "dev-master",
                 "zero-systems/zero-helper": "dev-master"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -40,22 +47,422 @@
                 "php",
                 "php framework"
             ],
-            "time": "2020-06-05T05:29:08+00:00"
+            "support": {
+                "issues": "https://github.com/PengYilong/framework/issues",
+                "source": "https://github.com/PengYilong/framework/tree/master"
+            },
+            "time": "2021-06-12T06:55:41+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "firebase/php-jwt",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "3c2d70f2e64e2922345e89f2ceae47d2463faae1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/3c2d70f2e64e2922345e89f2ceae47d2463faae1",
+                "reference": "3c2d70f2e64e2922345e89f2ceae47d2463faae1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v5.3.0"
+            },
+            "time": "2021-05-20T17:37:02+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "zero-systems/zero-container",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-container.git",
+                "reference": "f7ed7ce1c8681004baeb220bc675285a818797c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-container/zipball/f7ed7ce1c8681004baeb220bc675285a818797c6",
+                "reference": "f7ed7ce1c8681004baeb220bc675285a818797c6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/container": "~1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "zero container",
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-container/issues",
+                "source": "https://github.com/PengYilong/zero-container/tree/main"
+            },
+            "time": "2021-06-10T03:25:28+00:00"
+        },
+        {
+            "name": "zero-systems/zero-error",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-error.git",
+                "reference": "25b9fac2b4bec80086c388ae1e5c6291647339a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-error/zipball/25b9fac2b4bec80086c388ae1e5c6291647339a5",
+                "reference": "25b9fac2b4bec80086c388ae1e5c6291647339a5",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Yilong Peng",
+                    "email": "948800401@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "dealing with php error and exception",
+            "homepage": "https://github.com/PengYilong/zero-error",
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-error/issues",
+                "source": "https://github.com/PengYilong/zero-error/tree/master"
+            },
+            "time": "2021-06-10T03:26:43+00:00"
+        },
+        {
+            "name": "zero-systems/zero-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-helper.git",
+                "reference": "ac5d0225f08919a166b4f5b54d8cf92945adf1c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-helper/zipball/ac5d0225f08919a166b4f5b54d8cf92945adf1c1",
+                "reference": "ac5d0225f08919a166b4f5b54d8cf92945adf1c1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "John Peng",
+                    "email": "948800401@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "function library",
+            "homepage": "https://github.com/PengYilong/zero-helper",
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-helper/issues",
+                "source": "https://github.com/PengYilong/zero-helper/tree/master"
+            },
+            "time": "2021-03-20T02:13:41+00:00"
+        },
+        {
+            "name": "zero-systems/zero-log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-log.git",
+                "reference": "78fb47ca85ec6f07a54759b672531aa4dfbdcc86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-log/zipball/78fb47ca85ec6f07a54759b672531aa4dfbdcc86",
+                "reference": "78fb47ca85ec6f07a54759b672531aa4dfbdcc86",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "zero log",
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-log/issues",
+                "source": "https://github.com/PengYilong/zero-log/tree/master"
+            },
+            "time": "2021-06-12T07:14:02+00:00"
+        },
+        {
+            "name": "zero-systems/zero-orm",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-orm.git",
+                "reference": "6d76fbb8947269cee0512e451eebc80dd493e5e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-orm/zipball/6d76fbb8947269cee0512e451eebc80dd493e5e0",
+                "reference": "6d76fbb8947269cee0512e451eebc80dd493e5e0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0",
+                "zero-systems/zero-helper": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "John Peng",
+                    "email": "948800401@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ORM FRAMEWORK",
+            "homepage": "https://github.com/PengYilong/zero-orm",
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-orm/issues",
+                "source": "https://github.com/PengYilong/zero-orm/tree/master"
+            },
+            "time": "2021-06-12T07:18:33+00:00"
+        },
+        {
+            "name": "zero-systems/zero-validate",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PengYilong/zero-validate.git",
+                "reference": "9de65cf69b61de84f9f9aa4c68a8a65dda65656c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PengYilong/zero-validate/zipball/9de65cf69b61de84f9f9aa4c68a8a65dda65656c",
+                "reference": "9de65cf69b61de84f9f9aa4c68a8a65dda65656c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "php",
+            "autoload": {
+                "psr-4": {
+                    "zero\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "John Peng",
+                    "email": "948800401@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php validate",
+            "keywords": [
+                "php",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/PengYilong/zero-validate/issues",
+                "source": "https://github.com/PengYilong/zero-validate/tree/main"
+            },
+            "time": "2021-06-03T03:24:07+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "zero-systems/framework": 20
+        "zero-systems/framework": 20,
+        "zero-systems/zero-helper": 20,
+        "zero-systems/zero-orm": 20,
+        "zero-systems/zero-container": 20,
+        "zero-systems/zero-validate": 20,
+        "zero-systems/zero-error": 20,
+        "firebase/php-jwt": 20,
+        "zero-systems/zero-log": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1.0"
+        "php": ">=7.0.0"
     },
     "platform-dev": {
-        "php": ">=5.4"
+        "php": ">=7.0.0"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }
